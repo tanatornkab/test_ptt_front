@@ -1,0 +1,41 @@
+@import "../app.component.scss";
+.picture-layout {
+    padding: 40px;
+    display: grid;
+    gap: 36px;
+    .picture-warpper {
+        display: grid;
+        justify-items: end;
+        gap: 16px;
+
+        .btn-add {
+            display: flex;
+            width: max-content;
+            padding: 8px 10px;
+        }
+    }
+
+    .picture-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-template-rows: repeat(auto-fit, minmax(200px, auto));
+        justify-items: center;
+        gap: 40px;
+
+        .picture-card-warpper {
+            width: 100%;
+            border: 1px solid rgb(231, 231, 231);
+            border-radius: 6px;
+
+            .picture-card img {
+                width: 100%;
+
+            }
+
+            .picture-title {
+                padding: 24px 20px;  
+            }
+        }
+    }
+
+}

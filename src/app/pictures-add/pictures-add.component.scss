@@ -1,0 +1,33 @@
+@import "../app.component.scss";
+.picture-add {
+    padding: 40px;
+
+    .picture-add-layout {
+        display: grid;
+        justify-items: center;
+
+        .picture-add-from {
+            display: grid;
+            gap: 16px;
+            width: 60%;
+            justify-items: center;
+
+            .picture-add-from-warpper {
+                gap: 8px;
+
+                label {
+                    font-weight: 600;
+                }
+
+                display: grid;
+                grid-template-columns: 1fr 4fr;
+
+            }
+
+            .picture-add-from-footer {
+                display: flex;
+                gap: 8px;
+            }
+        }
+    }
+}

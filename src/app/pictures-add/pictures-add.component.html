@@ -1,0 +1,19 @@
+<div class="picture-add">
+    <h1 class="color-text-title">{{'Create'}}</h1>
+        <div class="picture-add-layout">
+        <form class="picture-add-from" [formGroup]="form" (ngSubmit)="onSubmit()">
+            <div class="picture-add-from-warpper">
+                <label>Name:</label>
+                <input type="text"   formControlName="title" />
+            </div>
+            <div class="picture-add-from-warpper">
+                <label>Photo:</label>
+                <input type="text"   formControlName="pictureUrl" />
+            </div>
+            <div class="picture-add-from-footer">
+                <button type="submit" [disabled]="form.invalid" class="btn btn-success">Save</button>
+                <button type="button" (click)="goToPictureView()" class="btn btn-light">Cancel</button>
+            </div>
+        </form>
+    </div>
+</div>
